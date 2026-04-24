@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiplication Tables</title>
+  <link rel="stylesheet" href="table.css">
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Calculator</a>
+    <h1>Multiplication Tables</h1>
+
+    <div class="controls">
+      <input type="number" id="tableNum" placeholder="Enter a number" min="1" max="100">
+      <button onclick="generateTable()">Generate</button>
+    </div>
+
+    <div id="tableOutput"></div>
+  </div>
+
+  <script src="table.js"></script>
+</body>
+</html>

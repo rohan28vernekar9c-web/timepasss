@@ -108,3 +108,18 @@ body.dark .buttons button:active { box-shadow: 0 1px 0 #111; }
 
 .orange:hover { background: #e09510; }
 .orange:active { box-shadow: 0 1px 0 #c07d0a; }
+
+.table-link {
+  display: block;
+  text-align: center;
+  margin-top: 18px;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.table-link:hover { opacity: 1; text-decoration: underline; }
+body.dark .table-link { color: #f5a623; }
