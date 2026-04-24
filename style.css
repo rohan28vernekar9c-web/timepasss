@@ -1,0 +1,110 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #5b9bd5;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.3s;
+}
+
+body.dark {
+  background: #121212;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 16px;
+  right: 20px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+
+body.dark .theme-toggle {
+  background: #2e2e2e;
+}
+
+.calculator {
+  background: #2e2e2e;
+  border-radius: 18px;
+  padding: 18px;
+  width: 300px;
+  box-shadow: 12px 12px 0px rgba(0,0,0,0.25);
+  transition: background 0.3s;
+}
+
+body.dark .calculator {
+  background: #1a1a1a;
+  box-shadow: 12px 12px 0px rgba(0,0,0,0.6);
+}
+
+#display {
+  background: #c8c8c8;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 1.8rem;
+  text-align: right;
+  color: #222;
+  margin-bottom: 16px;
+  min-height: 58px;
+  word-break: break-all;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark #display {
+  background: #2c2c2c;
+  color: #f0f0f0;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #222;
+  background: #e8e8e8;
+  box-shadow: 0 4px 0 #aaa;
+  transition: transform 0.1s, box-shadow 0.1s, background 0.3s, color 0.3s;
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #aaa;
+}
+
+button:hover { background: #d8d8d8; }
+
+body.dark .buttons button {
+  background: #3a3a3a;
+  color: #f0f0f0;
+  box-shadow: 0 4px 0 #111;
+}
+
+body.dark .buttons button:hover { background: #444; }
+body.dark .buttons button:active { box-shadow: 0 1px 0 #111; }
+
+.orange {
+  background: #f5a623;
+  box-shadow: 0 4px 0 #c07d0a;
+  color: #fff;
+}
+
+.orange:hover { background: #e09510; }
+.orange:active { box-shadow: 0 1px 0 #c07d0a; }
